@@ -1,0 +1,30 @@
+/* CSS for WATS 3020 Image Maker Project */
+
+#image-preview {
+    height: 600px;
+    width: 900px;
+    background: #666;
+    color: white;
+    font-family: Impact, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+}
+#image-preview .top-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#image-preview .bottom-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+html {
+    padding: 0 1rem;
+}
