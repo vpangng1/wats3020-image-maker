@@ -13,14 +13,14 @@ desire.
 ## Basic Requirements
 In order to complete this project, fulfill the following requirements:
 
-    * Complete the TODOs to initialize the `ImageMaker` class in JavaScript.
-        * Select the `#image-preview` element and store it as a class attribute.
-        * Create the `topText` and `bottomText` elements and store them as class attributes.
-        * Append the `topText` and `bottomText` elements to the `#image-preview` element.
-        * Select the form fields used to modify the image.
-    * Complete the TODOs to update the `#image-preview` element using JavaScript in the `drawPreview()` method.
-        * Read the data from the form fields.
-        * Update the DOM elements with form field data to update the image preview.
+* Complete the TODOs to initialize the `ImageMaker` class in JavaScript.
+    * Select the `#image-preview` element and store it as a class attribute.
+    * Create the `topText` and `bottomText` elements and store them as class attributes.
+    * Append the `topText` and `bottomText` elements to the `#image-preview` element.
+    * Select the form fields used to modify the image.
+* Complete the TODOs to update the `#image-preview` element using JavaScript in the `drawPreview()` method.
+    * Read the data from the form fields.
+    * Update the DOM elements with form field data to update the image preview.
 
 ## Stretch Goals
 If you have fulfilled the Basic Requirements, attempt some of these stretch goals:
