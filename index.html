@@ -10,32 +10,25 @@
 
   <link rel="stylesheet" href="css/main.css">
 
-  <script src="js/rasterizeHTML.allinone.js"></script>
+  <script src="js/dom-to-image.js"></script>
   <script src="js/main.js" defer></script>
 </head>
 
 <body>
-  <h1>Image Maker</h1>
-
-  <div id="image-wrapper">
-    <canvas id="canvas" width="0" height="0"></canvas>
-    <p>Right-click and select "Save Image As..." to save this image.</p>
-  </div>
-
-  <div id="image-preview-wrapper">
-    <h2>Previewing Image</h2>
-    <div id="image-preview">
-      <p class="top-text">Lorem Ipsum</p>
-      <p clss="bottom-text">Dolor Sit Amet</p>
-    </div>
-  </div>
-
   <div id="form-container">
+    <h1>Image Maker</h1>
     <p>Choose your settings to generate an image.</p>
     <form>
-      <p><input name="topText" placeholder="Text for top of image."></p>
-      <p><input name="bottomText" placeholder="Text for bottom of image."></p>
       <p>
+        <label for="topText">Top Text</label>
+        <input name="topText" placeholder="Text for top of image." value="">
+      </p>
+      <p>
+        <label for="bottomText">Bottom Text</label>
+        <input name="bottomText" placeholder="Text for bottom of image." value="">
+      </p>
+      <p>
+        <label for="backgroundImage">Background</label>
         <select name="backgroundImage">
           <option value="dog.jpg">dog</option>
           <option value="fry.jpg">fry</option>
@@ -44,9 +37,12 @@
           <option value="stark.jpg">stark</option>
         </select>
       </p>
-      <p><input type="submit" value="Generate Image Preview"></p>
+      <p><input type="submit" value="Download Image"></p>
     </form>
   </div>
 
+  <div id="image-preview">
+    <!-- Image Content Goes Here -->
+  </div>
 </body>
 </html>

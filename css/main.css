@@ -1,30 +1,47 @@
 /* CSS for WATS 3020 Image Maker Project */
 
+/* Image Styles */
 #image-preview {
-    height: 600px;
-    width: 900px;
-    background: #666;
+    height: 100vh;
+    width: 100vw;
+    background-color: #666;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     color: white;
     font-family: Impact, monospace;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bold;
     position: relative;
+    padding: 0.5rem;
 }
-#image-preview .top-text {
+.top-text {
     position: absolute;
     top: 0;
-    left: 0;
 }
-#image-preview .bottom-text {
+.bottom-text {
     position: absolute;
     bottom: 0;
-    left: 0;
 }
 
+/* Form Styles */
+#form-container {
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 1rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 25%;
+    z-index: 1000;
+}
+
+/* General structure styles */
 body {
     font-family: Helvetica, sans-serif;
+    margin: 0;
 }
 
 html {
-    padding: 0 1rem;
+    padding: 0;
 }
