@@ -11,54 +11,51 @@
 
 class ImageMaker {
     constructor(){
-        // When this class is instantiated, the `constructor()` method is executed.
-        // TODO: Set up attributes that point to the HTML elements we wish to work with.
+       
+        this.imagePreview = document.querySelector('#image-preview'); // selects image-preview div of index.html document
+        
+        this.topText = document.createElement('p');          // 
+                                                             // 
+        this.topText.setAttribute('class', 'top-text');      // create a new <p> element called this.topText
+                                                             //
+        this.imagePreview.appendChild(this.topText);         // adds this.topText child element to this.imagePreview
 
-        // TODO: Select the `#image-preview` div using any document selector method.
-        this.imagePreview = ;
+        this.bottomText = document.createElement('p');        //
+                                                              // create a new <p> element with classname bottom-text
+        this.bottomText.setAttribute('class', 'bottom-text'); // 
+                                                              //
+        this.imagePreview.appendChild(this.bottomText);       // add this.bottomText to this.imagePreview
+      
+      
+       
+      
+        // Form fields for reading user input
+        
+        this.backgroundInput = document.querySelector('select[name="backgroundImage"]'); // selects the backgroundImage element 
 
-        // TODO: create a new `<p>` element called `this.topText`
-        this.topText = ;
-        // TODO: Add a `class` attribute to `this.topText` that contains the classname "top-text".
+      
+        this.topTextInput = document.querySelector('input[name="topText"]'); // selects the topText input element
 
-        // TODO: Append `this.topText` as a child element to `this.imagePreview`
-
-
-        // TODO: create a new `<p>` element called `this.bottomText`
-        this.bottomText = ;
-        // TODO: Add a `class` attribute to `this.bottomText` that contains the classname "bottom-text".
-
-        // TODO: Append `this.bottomText` as a child element to `this.imagePreview`
-
-        // This class also needs to use the form fields to read user input. Set
-        // those up for future use, too.
-
-        // TODO: Select the `input` element with the `name` attribute "backgroundImage"
-        this.backgroundInput = ;
-
-        // TODO: Select the `input` element with the `name` attribute "topText"
-        this.topTextInput = ;
-
-        // TODO: Select the `input` element with the `name` attribute "bottomText"
-        this.bottomTextInput = ;
-
-        // NOTE: If you add additional form fields to modify other aspects of
-        // the image, then you will need to make attributes for each of those
-        // elements here.
+    
+        this.bottomTextInput = document.querySelector('input[name="bottomText"]'); // selects the bottomText input element
+     
     }
+  
+  
+        
     drawPreview(){
+      
         // This function is called whenever a user changes one of the form fields
         // and whenever an image is generated for download. This function must
         // update the style attributes and innerHTML content of the HTML
         // elements selected in the `constructor()` of this class in order to
         // update `this.imagePreview`.
-
-        // TODO: Update the `background-image` CSS property for `this.imagePreview`.
-
-        // TODO: Update the `innerHTML` of `this.topText`.
-
-        // TODO: Update the `innerHTML` of `this.bottomText`
-
+      
+      this.imagePreview.style.backgroundImage = `url(images/${this.backgroundInput.value})`; // updates background-image property of this.imagePreview
+       
+      this.topText.innerHTML = this.topTextInput.value; // updates the innerHTML content of this.topText
+       
+      this.bottomText.innerHTML = this.bottomTextInput.value; // updates the innerHTML content of this.bottomText
 
     }
     downloadImage(){
