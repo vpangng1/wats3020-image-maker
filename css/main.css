@@ -26,14 +26,16 @@
 
 /* Form Styles */
 #form-container {
-    background: rgba(0,0,0,0.5);
-    color: #fff;
+    background: rgb(255, 255, 255);
+    color: black;
     padding: 1rem;
     position: absolute;
     top: 1rem;
     right: 1rem;
     width: 25%;
     z-index: 1000;
+    box-shadow: 5px 10px #404040;
+    border: 1px solid;
 }
 
 /* General structure styles */
