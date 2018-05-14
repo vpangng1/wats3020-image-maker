@@ -26,6 +26,11 @@ class ImageMaker {
                                                               //
         this.imagePreview.appendChild(this.bottomText);       // add this.bottomText to this.imagePreview
       
+        //this.colorText = document.createElement('p');
+      
+        //this.colorText.setAttribute('class', 'color-text');
+      
+        //this.imagePreview.appendChild(this.colorText);
       
        
       
@@ -38,6 +43,9 @@ class ImageMaker {
 
     
         this.bottomTextInput = document.querySelector('input[name="bottomText"]'); // selects the bottomText input element
+      
+      
+        //this.colorTextInput = document.querySelector('input[name="colorText"]');
      
     }
   
@@ -56,6 +64,8 @@ class ImageMaker {
       this.topText.innerHTML = this.topTextInput.value; // updates the innerHTML content of this.topText
        
       this.bottomText.innerHTML = this.bottomTextInput.value; // updates the innerHTML content of this.bottomText
+      
+      //this.colorTextInput.innerHTML = this.colorText.value;
 
     }
     downloadImage(){
