@@ -26,11 +26,11 @@ class ImageMaker {
                                                               //
         this.imagePreview.appendChild(this.bottomText);       // add this.bottomText to this.imagePreview
       
-        //this.colorText = document.createElement('p');
-      
-        //this.colorText.setAttribute('class', 'color-text');
-      
-        //this.imagePreview.appendChild(this.colorText);
+        //this.colorText = document.createElement('p');        ///
+                                                               ///
+        //this.colorText.setAttribute('class', 'color-text');  /// attempted stretch goal to change text color
+                                                               ///      
+        //this.imagePreview.appendChild(this.colorText);       ///
       
        
       
@@ -45,7 +45,7 @@ class ImageMaker {
         this.bottomTextInput = document.querySelector('input[name="bottomText"]'); // selects the bottomText input element
       
       
-        //this.colorTextInput = document.querySelector('input[name="colorText"]');
+        //this.colorTextInput = document.querySelector('input[name="colorText"]'); // attempted stretch goal to change text color
      
     }
   
@@ -65,7 +65,7 @@ class ImageMaker {
        
       this.bottomText.innerHTML = this.bottomTextInput.value; // updates the innerHTML content of this.bottomText
       
-      //this.colorTextInput.innerHTML = this.colorText.value;
+      //this.colorTextInput.innerHTML = this.colorText.value; // attempted stretch goal to change text color
 
     }
     downloadImage(){
